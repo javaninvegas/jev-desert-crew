@@ -23,8 +23,9 @@ follows below the line.
 - **Jev through Vercel AI Gateway** (`JEV_PROVIDER=typesafe`, `JEV_BASE_URL=https://ai-gateway.vercel.sh/typesafe`,
   `JEV_MODEL=typesafe-ai/jev`), about 0.7 s and ~$0.00002 per decision. When it answers "busy", the bots can fall back
   to a local Ollama model (`JEV_LOCAL_URL`). Hawk's free-form plan uses OpenRouter's `typesafe/jev-router`.
-- **New characters.** Original cartoon art in `art/`. The Hive (public leaderboard), the update check and the
-  hosting link are turned off.
+- **New characters.** Original cartoon art in `art/`. The hosting link and the Hive button were removed from the
+  dashboard header. The original Setup page (and its optional "join the Hive" leaderboard) and the "update available"
+  check are unchanged from upstream; set `UPDATE_CHECK=false` to turn the check off.
 
 ## Settings this fork adds
 

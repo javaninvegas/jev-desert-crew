@@ -4,7 +4,7 @@
 //   flat    -> "Buy <coin> now?" for each of the bot's coins (1-3), one call
 //   holding -> "Sell the <coin> you hold now?", one call
 // A yes (> 0.5) executes; if several buys say yes, the highest wins. Anything missing or malformed holds.
-// Code keeps only the physical limits (paper, own cash, long-only, the stop-loss set at entry, the $5/day Jev cap).
+// Code keeps only the physical limits (paper, own cash, long-only, the stop-loss set at entry, the daily Jev spend cap).
 // Pure functions only: no I/O here, so every rule is unit-tested.
 import type { StyleId } from "./settings.js";
 import type { CoinStats, MarketView } from "./market/types.js";
